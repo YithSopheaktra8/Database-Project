@@ -35,7 +35,8 @@ CREATE TABLE IF NOT EXISTS `attandent` (
   `stuID` int DEFAULT NULL,
   PRIMARY KEY (`attID`),
   KEY `stuID` (`stuID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 
 --
 -- Dumping data for table `attandent`
@@ -60,7 +61,8 @@ CREATE TABLE IF NOT EXISTS `classes` (
   `clsName` varchar(250) DEFAULT NULL,
   `clslevel` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`clsID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 
 --
 -- Dumping data for table `classes`
@@ -84,7 +86,8 @@ CREATE TABLE IF NOT EXISTS `enrollment` (
   `EnID` int NOT NULL AUTO_INCREMENT,
   `EnDate` date DEFAULT NULL,
   PRIMARY KEY (`EnID`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 
 --
 -- Dumping data for table `enrollment`
@@ -122,7 +125,8 @@ CREATE TABLE IF NOT EXISTS `students` (
   KEY `FK_teaID` (`FK_teaID`),
   KEY `FK_clsID` (`FK_clsID`),
   KEY `FK_enroll` (`FK_enroll`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 
 --
 -- Dumping data for table `students`
@@ -153,7 +157,8 @@ CREATE TABLE IF NOT EXISTS `teachers` (
   `teaEmail` varchar(250) DEFAULT NULL,
   `teaAddress` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`teaID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 
 --
 -- Dumping data for table `teachers`
